@@ -1,0 +1,63 @@
+
+.sp_table_rows thead tr th {
+     text-align: center;
+}
+
+.sp_table_rows tbody tr td {
+    padding: 5px;
+    text-align: center;
+}
+.sp_matrix_rows {
+    margin-bottom: 5px;
+}
+
+.sp_matrix_rows tbody tr td {
+    text-align: center;
+    border-right: 1px solid #E3E4E8;
+}
+
+.sp_matrix_rows tbody tr:last-child {
+    border-bottom: 1px solid #E3E4E8;
+}
+
+.sp_matrix_rows tbody tr td a {
+    padding: 8px 0 !important;
+}
+
+.sp_table_rows .data-name.has-logo a{
+    display: flex;
+    align-items: center;
+    line-height: 1.1;
+}
+
+
+.sp_table_rows .data-name {
+    text-align: left;
+}
+
+.sp_table_rows .data-name,
+.sp_table_rows .data-pts,
+.sp_matrix_rows .sp-event-matrix-home-label {
+    font-weight: 600;
+}
+
+.sp_table_rows .data-rank,
+.sp_table_rows .data-p,
+.sp_table_rows .data-w,
+.sp_table_rows .data-d,
+.sp_table_rows .data-l,
+.sp_table_rows .data-pts {
+    width: 50px!important;
+}
+.sp_table_rows .data-f,
+.sp_table_rows .data-a,
+.sp_table_rows .data-gd {
+    width: 55px;
+}
+
+.sp_player_table_img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C433;
+}

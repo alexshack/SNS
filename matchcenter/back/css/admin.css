@@ -1,0 +1,26 @@
+.loaders_row {
+	display: flex;
+	gap: 15px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.loaders_col {
+	padding: 0px 10px 10px 10px;
+	border-radius: 5px;
+	border: 1px solid #c3c4c7;
+	width: calc(25% - 15px);
+	background: #fff;
+	max-height: 700px;
+	overflow-y: scroll;
+}
+.loaders_col::-webkit-scrollbar {
+	height: 5px;
+	width: 5px;
+}
+.loaders_col::-webkit-scrollbar-track {
+	background: #fff;
+}
+.loaders_col::-webkit-scrollbar-thumb {
+	background-color: #009ADD;
+  	border-radius: 5px;
+}

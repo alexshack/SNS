@@ -1,0 +1,108 @@
+.stat_results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.stat_compare_name {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.stat_compare_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 10px;
+	align-items: stretch;
+}
+
+.stat_compare_values {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	width: 200px;
+}
+
+.stat_compare_line {
+	display: flex;
+	width: calc((100% - 220px ) / 2);
+	align-items: stretch;
+
+}
+
+.stat_compare_line_left {
+	justify-content: flex-end;
+}
+
+.stat_compare_line_right {
+	justify-content: flex-start;
+}
+
+.stat_compare_home {
+	background-color: #15A863;
+}
+
+.stat_compare_away {
+	background-color: #0059B2;
+}
+
+.stat_rows {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.stat_row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	font-size: 16px;
+}
+.stat_row_name {
+	display: flex!important;
+	justify-content: center;
+	gap: 10px;
+	width: 200px;
+	
+}
+
+.stat_row_value {
+	width: calc((100% - 220px ) / 2);
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-weight: 700;
+}
+
+.stat_row_value span {
+	width: 70px;
+	text-align: center;
+}
+
+.stat_row_value_home {
+	justify-content: flex-end;
+	color: #15A863;
+}
+.stat_row_value_away {
+	justify-content: flex-start;
+	color: #0059B2;
+}
+.stat_form {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+.stat_form_W {
+	background: #09B211;
+}
+.stat_form_L {
+	background: #FF4747;
+}
+.stat_form_D {
+	background: #FFC504;
+}

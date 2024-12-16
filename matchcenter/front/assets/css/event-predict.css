@@ -1,0 +1,81 @@
+.predict_expert-header {
+	display: flex;
+	justify-content: space-between;
+	background: #ebebeb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+}
+
+
+
+.predict_expert-header-item {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.predict_expert-title {
+
+}
+.predict_expert-value {
+	font-weight: 700;
+}
+
+.predict-header__bookmaker-button {
+    display: flex;
+    font-weight: bold;
+    font-size: 16px;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.predict-header__bookmaker-kf {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #15A863;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    white-space: nowrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.predict-header__bookmaker-kf:hover {
+    box-shadow: 0 0 12px 0 #15A863;
+}
+
+.predict-header__bookmaker-kf:before {
+    content: attr(data-kf);
+    display: block;
+    border-radius: 5px;
+    color: #00FF87;
+    background-color: #081525;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    white-space: nowrap;
+}
+
+@media(min-width: 576px) {
+.predict-header__bookmaker-kf {
+    flex: 1;
+}
+}
+@media(min-width: 768px) {
+  
+}
+@media(min-width: 1000px) {
+  
+}
+@media(min-width: 1140px) {
+
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+
+}

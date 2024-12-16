@@ -1,0 +1,27 @@
+
+
+@media(min-width: 576px) {
+
+}
+@media(min-width: 768px) {
+ 
+
+}
+@media(min-width: 1000px) {
+    .sp_team_header_row {
+        flex-direction: row;
+    }
+    .sp_team_header_logo {
+        height: 180px;
+        width: 180px;
+    }   
+}
+@media(min-width: 1140px) {
+
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+
+}

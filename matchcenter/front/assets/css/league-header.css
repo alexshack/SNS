@@ -1,0 +1,64 @@
+.sp_league_header_row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.sp_league_header_logo {
+    padding: 15px;
+    background: #fff;
+    border-radius: 20px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sp_league_header_logo img {
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+.sp_league_header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.sp_league_header_top {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+
+@media(min-width: 576px) {
+
+}
+@media(min-width: 768px) {
+
+
+
+}
+@media(min-width: 1000px) {
+    .sp_league_header_row {
+        flex-direction: row;
+    }
+    .sp_league_header_logo {
+        height: 180px;
+        width: 180px;
+    }    
+
+}
+@media(min-width: 1140px) {
+
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+
+}

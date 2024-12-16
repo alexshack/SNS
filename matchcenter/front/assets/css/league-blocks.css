@@ -1,0 +1,75 @@
+.sp_league_blocks {
+    display: flex;
+    gap: 12px;
+    padding: 15px 0 0;
+    border-top: 1px solid rgba(196, 196, 196, 0.20);
+    overflow-x: auto; 
+}
+
+.sp_league_blocks::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+.sp_league_blocks::-webkit-scrollbar-track {
+    background: #fff;
+}
+.sp_league_blocks::-webkit-scrollbar-thumb {
+    background-color: #009ADD;
+    border-radius: 3px;
+}
+
+.sp_league_block {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.sp_league_block_img {
+    background: #FFFFFF;
+    border: 1px solid #E3E4E8;
+    border-radius: 20px;
+    padding: 10px;    
+    height: 70px;
+    width: 70px;
+
+}
+
+.sp_league_block_name {
+    color: var(--text-secondary, #636363);
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.sp_league_block:hover .sp_league_block_img{
+    border-color: #0059B2;
+}
+
+.sp_league_block:hover .sp_league_block_name{
+    color: #0059B2;
+}
+
+@media(min-width: 576px) {
+    .sp_league_block {
+       
+    }
+}
+@media(min-width: 768px) {
+ 
+
+}
+@media(min-width: 1000px) {
+
+}
+@media(min-width: 1140px) {
+ 
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+ 
+}

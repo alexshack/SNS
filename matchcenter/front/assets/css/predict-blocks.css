@@ -1,0 +1,347 @@
+
+.predicts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.predicts-list:after {
+  content: '';
+  display: block;
+  width: calc(33.33% - 7.5px);
+}
+
+.predicts-item {
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid #E2ECF3;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.predicts-item:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 12px;
+}
+
+
+.predicts-item__header {
+  position: relative;
+}
+
+.predicts-item__image {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-top: 62.5%;
+  height: 0;
+}
+
+.predicts-item__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.predicts-item__type {
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 12px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  left: 5px;
+  top: 5px;
+  background: linear-gradient(0deg, #086E3E, #086E3E), #9ED25E;
+  border-radius: 3px;
+  padding: 3px 6px;
+}
+
+.predicts-item__datetime {
+  position: absolute;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000;
+  left: 5px;
+  bottom: 5px;
+  background: #fff;
+  border-radius: 3px;
+  padding: 5px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.predicts-item__inside {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  position: absolute;
+  background: #F1E816;
+  transform: rotate(45deg);
+  right: -23px;
+  top: 9px;
+  padding: 1px 20px 2px;
+}
+
+.predicts-item__day {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  color: #000000;
+  position: absolute;
+  background: #FFA500;
+  transform: rotate(45deg);
+  right: -28px;
+  top: 25px;
+  padding: 2px 25px 2px;
+  text-transform: uppercase;
+}
+
+.predicts-item__date {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #888888;
+  margin-bottom: 5px;
+}
+
+.predicts-item__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 15px;
+  display: block;
+  height: 100%;
+}
+
+.predicts-item__name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 15px 15px 0;
+  display: block;
+}
+
+.predicts-item__header:hover .predicts-item__name {
+  color: #15A863;
+}
+
+.predicts-item__link {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+
+.predicts-item__title:hover {
+  text-decoration: underline;
+}
+
+.predicts-item__bet_type {
+  position: relative;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.predicts-item__content {
+  padding: 15px;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.no-promocode .predicts-item__votes {
+  margin-bottom: 65px;
+}
+
+
+.predicts-item__bonus {
+  background: #FFF4E5;
+  border: 1px solid rgba(255, 71, 71, 0.1);
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #131313;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.predicts-item__bonus:hover {
+  background: #FFFDFA;
+  border: 1px solid rgba(255, 71, 71, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 2px rgba(255, 71, 71, 0.2);
+}
+
+.predicts-item__bonus i {
+  color: #FF4747;
+  margin-top: -3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.predicts-item__bet {
+  background: #15A863;
+  border: 1px solid #15A863;
+  box-sizing: border-box;
+  border-radius: 5px;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.predicts-item__bet:hover {
+  background: #1CBF72;
+}
+
+
+.predicts-item__content .image-caption,
+.predicts-item-full__poster-link .image-caption {
+  color: #959595;
+  font-size: 12px;
+  padding: 7px 0;
+  width: 100%;
+  text-align: center;
+}
+.predicts-item__content .image-caption {
+  text-align: left;
+}
+
+.predicts-item__has-promo {
+  min-height: 130px;
+}
+
+
+.predicts-item__promo-code-outer {
+  background-color: #0062C3;
+  display: flex;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  cursor: pointer;
+}
+.predicts-item__promo-code-outer:before {
+  content: 'Промокод';
+  text-transform: uppercase;
+  margin: 0 7px;
+  font-size: 10px;
+  color: #fff;
+}
+.predicts-item__promo-code {
+  background-color: #0076EC;
+  position: relative;
+  color: #fff;
+  font-size: 14px;
+  flex: 1;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  max-height: 35px;
+  display: block;
+}
+
+.predicts-item__promo-code-outer:hover .predicts-item__promo-code,
+.predicts-item__promo-code:hover {
+  background-color: #1d87f1;
+}
+.predicts-item__not-promo {
+  margin: 0 0 15px;
+}
+/*** Responsive ***/
+
+@media screen and (min-width: 576px) {
+
+  .predicts-item {
+    width: calc(50% - 7.5px);
+  }
+
+  /* Full View */
+
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+
+  .predicts-item {
+    width: calc(33.33% - 7.5px);
+  }
+
+  
+  .page-template-predicts
+  .predicts-item:nth-child(4) {
+    display: flex;
+  }
+
+  /* Full View */
+
+
+ 
+}
+
+@media screen and (min-width: 1280px) {
+
+  .articles-item__image {
+    height: 178px;
+  }
+
+  .predicts-item {
+    width: 284px;
+  }
+
+  .page-template-predicts .predicts-item {
+    width: 284px;
+  }
+
+
+
+  .predicts-item:nth-child(4) {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1530px) {
+  body.branding .predicts-item {
+    width: 272px;
+  }
+}

@@ -1,0 +1,64 @@
+.sp_squads {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.sp_squads_team {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.sp_squads_team img {
+    width: 32px!important;
+    height: 32px!important;   
+}
+
+.sp_squads_team a {
+    font-size: 16px;
+    line-height: 18px;
+    color: #131313;
+    font-weight: 700;
+}
+
+.sp_player_row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 4px 0;
+    border-bottom: 1px solid #C4C4C433;;
+}
+
+.sp_player_row:last-child {
+    border: none;
+}
+
+.sp_player_row_position {
+    min-width: 81px;
+    margin-left: auto;
+    color: #636363;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.sp_player_row_img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C433;
+}
+
+@media(min-width: 768px) {
+    .sp_squads {
+        flex-direction: row;
+    }
+
+    .sp_squads .sp_inner_block {
+        width: calc((100% - 20px ) / 2);
+    }
+
+
+}

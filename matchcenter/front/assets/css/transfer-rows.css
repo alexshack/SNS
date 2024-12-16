@@ -1,0 +1,215 @@
+.sp_transfer_header {
+    display: none;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    font-weight: 700;
+    background: #F5F5F5;
+    border-radius: 8px 8px 0 0;
+    padding: 12px 16px;
+    gap: 10px;
+}
+
+.sp_transfer_header_player {
+    width: calc((100% - 120px) / 2);
+}
+
+.sp_transfer_header_teams {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 120px) / 2);
+}
+
+.sp_transfer_header_info {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+
+.sp_transfer_rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sp_transfer_row {
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sp_transfer_row_player {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #C4C4C433;
+}
+
+.sp_transfer_row_img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C433;
+}
+
+.sp_transfer_row_name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #131313;
+    padding-bottom: 4px;
+}
+
+.sp_transfer_row_position {
+    font-size: 12px;
+    line-height: 12px;
+    color: #888888;
+}
+
+.sp_transfer_row_teams {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sp_transfer_row_team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp_transfer_row_team_type {
+    font-size: 14px;
+    line-height: 18px;
+    color: #888888;
+}
+
+.sp_transfer_row_team_team {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.sp_transfer_row_team_img {
+    height: 20px!important;
+    width: auto;
+}
+
+.sp_transfer_row_team_name {
+    font-size: 16px;
+    line-height: 18px;
+    color: #131313;
+}
+
+.sp_transfer_row_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.sp_transfer_row_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp_transfer_row_info_key {
+    font-size: 14px;
+    line-height: 18px;
+    color: #888888;    
+}
+
+.sp_transfer_row_info_name {
+    font-size: 16px;
+    line-height: 18px;
+    color: #131313;    
+}
+
+@media(min-width: 576px) {
+    .sp_transfer_header {
+        display: flex;
+    }
+    .sp_transfer_rows {
+        gap: 0;
+        border-radius: 0 0 8px 8px;
+        border: 1px solid #C4C4C433;
+    }
+    .sp_transfer_row {
+        background: none;
+        border-radius: 0;
+        border-top: 1px solid #C4C4C433;
+        padding: 12px 16px;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    .sp_transfer_row_player {
+        border: none;
+        width: calc((100% - 120px) / 2);
+        min-width: calc((100% - 120px) / 2);
+        padding: 0;
+    }
+    .sp_transfer_row_teams {
+        width: calc((100% - 120px) / 2);
+        min-width: calc((100% - 120px) / 2);
+    }
+    .sp_transfer_row_team_type {
+        display: none;
+    }
+    .sp_transfer_row_infos {
+        gap: 8px;
+        justify-content: center;
+    }
+    .sp_transfer_row_info_key {
+        display: none;
+    }
+   
+}
+
+@media(min-width: 768px) {
+
+    .sp_transfer_header_player,
+    .sp_transfer_header_teams,
+    .sp_transfer_row_player,
+    .sp_transfer_row_teams {
+        width: calc((100% - 180px) / 2);
+        min-width: calc((100% - 180px) / 2);
+    }
+    .sp_transfer_row_img {
+        width: 48px;
+        height: 48px;
+    }
+    .sp_transfer_row_name {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+}
+
+@media(min-width: 1140px) {
+
+    .sp_transfer_header_player,
+    .sp_transfer_row_player {
+        width: 250px;
+        min-width: 250px;
+    }
+
+    .sp_transfer_header_teams,
+    .sp_transfer_row_teams {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 400px;
+        min-width: 400px;        
+    } 
+
+    .sp_transfer_header_team,
+    .sp_transfer_row_team {
+        width: 195px;
+        min-width: 195px;
+    }
+}

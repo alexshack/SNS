@@ -1,0 +1,966 @@
+/* HEADINGS */
+.sp_block {
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+body.branding .sp_block {
+    border-bottom: 1px solid rgba(196, 196, 196, 0.20);
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+body.branding .main .sp_block {
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+.sp_h1 {
+    font-weight: bold;
+    color: #000000;
+    font-size: 22px;
+    line-height: 1.1em;
+    margin: 10px 0 0;
+}
+
+.sp_block_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.sp_block_title h2,
+.sp_block_title h3 {
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    width: auto;
+}
+
+.sp_block_title.sp_block_title-main .sp_h1,
+.sp_block_title.sp_block_title-main h2,
+.sp_block_title.sp_block_title-main .sp_block_title_btns {
+    min-width: 100%;
+}
+
+.sp_block_title_btns {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.sp_block_title_btn {
+    border-radius: 8px;
+    border: 1px solid #C4C4C433;
+    padding: 8px 16px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #0059B2;
+    cursor: pointer;
+}
+
+.small-buttons .sp_block_title_btn {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 5px;
+}
+
+.sp_block_title_btn span {
+    border-radius: 5px;
+    background: #1DBF72;
+    color: #FFF;
+    padding: 1px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+.sp_block_title_btn:hover,
+.sp_block_title_btn.active {
+    background: #0059B2;
+    color: #FFF;
+    border-color: #0059B2;;
+}
+
+.sp_block_title_btn:hover span {
+    background: #fff;
+    color: #1DBF72;
+}
+
+.sp_block_title a {
+    padding: 8px;
+    color: var(--blue-1, #0059B2);
+    font-size: 13px;
+    line-height: 150%;
+    border-radius: 8px;
+    background: var(--background-main, #F5F5F5);
+    align-self: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sp_block_title a:hover {
+    background-color: #0059B2;
+    color: #fff;
+}
+
+.sp_block ol {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px;
+    padding: 0 0 0 20px;
+    list-style-type: decimal;
+}
+
+.sp_block ol li {
+    margin-bottom: 10px;
+}
+
+.sp_block ul {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 15px;
+    padding: 0 0 0 20px;
+}
+
+.sp_block ul li {
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.sp_block ul li::before {
+    content: '';
+    display: block;
+    top: 10px;
+    height: 5px;
+    width: 5px;
+    background: #276fb9;
+    border-radius: 50%;
+    position: absolute;
+    left: -14px;
+}
+
+.sp_inner_block {
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid #C4C4C433;
+}
+
+.sp_block_accord .sp_block_accord_title {
+    position: relative;
+    cursor: pointer;
+}
+
+.sp_block_accord .sp_block_accord_title:after {
+    position: absolute;
+    right: 0;
+    top: calc(50% - 10px);
+    content: '';
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sp_block_accord.open .sp_block_accord_title:after {
+    transform: rotate(180deg);
+}
+
+.sp_block_accord .sp_block_accord_content {
+    display: none;
+    transition: 0.2s;
+}
+
+.sp_block_accord.open .sp_block_accord_content {
+    display: flex;
+}
+
+
+
+/* HEADER */
+
+.sp_header.sp_block {
+    position: relative;
+    z-index: 1;
+    padding: 24px 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sp_header .breadcrumb {
+    background-color: transparent;
+    flex: 1;
+    min-width: 100%;
+    padding: 7px 7px 0;
+}
+.sp_header .breadcrumb .wrapper {
+    padding: 0;
+}
+.sp_header .breadcrumb a,
+.sp_header .breadcrumb span {
+    color: rgba(255, 255, 255, 0.5);
+}
+.sp_header_container {
+    padding: 10px 10px 15px;
+    max-width: 1034px;
+    margin: 0 auto;
+}
+
+.sp_header_logo {
+    padding: 0px 10px;
+    background: #fff;
+    border-radius: 20px;
+    height: 100px;
+    width: 120px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sp_header_logo img {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+}
+
+.sp_header_title {
+    font-size: 18px;
+    line-height: 1.1em;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sp_header_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    width: calc(100% - 140px);
+}
+
+.sp_header_top {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.sp_header_bonus {
+    min-width: 290px;
+}
+
+.sp_header_bonus {
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sp_header_tabs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.sp_header_tabs_desktop {
+    display: none;
+}
+
+.sp_header_tab {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #081525;
+    border: 1px solid #1d87f1;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 600;
+}
+
+.sp_header_tabs_season .sp_header_tab {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+a.sp_header_tab:hover {
+    background: #1d87f1;
+    color: #fff;
+}
+
+.sp_header_tab.active {
+    background: #1d87f1;
+    color: #fff;
+}
+
+.sp_header .sp_block {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sp_header .sp_event_blocks {
+    min-width: 290px;
+    margin-bottom: 0;
+    align-items: stretch;
+    max-height: none;
+    overflow: hidden;
+    gap: 0;
+    flex-direction: column;
+}
+
+.sp_header .sp_event_block {
+    background: none;
+    border: 1px solid #0059B2;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.sp_header .sp_event_block_teams {
+    border-color: #fff;
+}
+.sp_header .team_name {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sp_header .sp_event_block_bonus {
+    background: #0059B2;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.sp_header .sp_event_block_bonus_bk {
+    max-height: 35px;
+    max-width: 90px;
+    height: auto;
+    width: auto;
+    min-width: 80px;
+    border-radius: 5px;
+    padding: 5px 4px;
+    background: #fff;
+}
+
+.sp_header .sp_event_block_bonus_btn {
+    border-radius: 5px;
+    display: block;
+    min-width: 36px;
+    height: 36px;
+    transition: 0.2s;
+    background: #FF4747;
+    position: relative;
+}
+.sp_header .sp_event_block_bonus_btn:hover {
+    background: #00FF87;
+}
+.sp_header .sp_event_block_bonus_btn:after {
+    content: '';
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 13px;
+    right: 15px;
+}
+
+/* TABLES */
+
+.kws__table,
+.sp-table-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    width: 100%;
+    border: 1px solid #C4C4C433;
+    border-radius: 8px;
+    padding: 15px;    
+}
+
+.kws__table table,
+.sp-table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kws__table table th,
+.sp-table-wrapper table th {
+    font-size: 16px;
+    line-height: 24px;
+    color: #131313;
+    padding: 7px 4px;
+    text-align: left;
+}
+
+.kws__table table th p,
+.sp-table-wrapper table th p {
+    color: #131313;
+}
+
+.kws__table table td,
+.sp-table-wrapper table td {
+    font-size: 16px;
+    line-height: 24px;
+    color: #404040;
+    padding: 5px;
+    border-top: 1px solid #C4C4C433;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.sp-table-wrapper thead tr th a {
+    color: #000;
+}
+
+.sp-table-wrapper tr.highlighted {
+    background: #E3E4E8;
+}
+
+.sp-table-wrapper .text-center {
+    text-align: center;
+}
+
+.sp-table-wrapper .sp-league-table .team-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.sp-table-wrapper .sp-league-table .team-logo img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+
+/* TABLES PAGINATION */
+.sp-table-wrapper .dataTables_paginate {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sp-table-wrapper .dataTables_paginate > span {
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sp-table-wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 10px;
+    margin: 0 !important;
+    border-radius: 5px;
+    border: 1px solid #E3E4E8;
+}
+
+.sp-table-wrapper .dataTables_paginate .paginate_button.current {
+    background: #0059B2;
+    color: #fff;
+    opacity: 1;
+}
+.sp-table-wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #0059B2;
+    color: #fff;    
+}
+
+.sp-table-wrapper .dataTables_paginate .paginate_button:hover {
+    background: #1d87f1;
+    color: #fff;
+}
+
+.sp_coef_table img {
+    max-width: 120px!important;
+}
+
+.sp_coef_table a {
+    display: flex;
+}
+
+.sp_coef_table .sp_bet {
+    width: 50px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 auto;
+}
+
+.sp_view_all_link {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+
+/* SIDEBAR */
+.sidebar-lenta_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-lenta_title a {
+ color: #000;
+}
+.sidebar-lenta_title a:hover {
+    color: #1d87f1;
+}
+
+.sidebar_items_title {
+    font-weight: bold;
+    margin-bottom: 5px;
+ }
+
+.sidebar_items_with_icon {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar_items_with_icon a, 
+.sidebar_items_with_icon div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+}
+.sidebar_items_with_icon a.active, 
+.sidebar_items_with_icon div.active {
+    color: #3C72FF;
+    font-weight: 600;
+}
+.sidebar_items_with_icon a:hover {
+    color: #3C72FF;
+}
+.sidebar_items_with_icon img {
+    width: 25px;
+    height: auto;
+}
+
+.sp_event_forms {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.sp_event_form {
+    width: 50%;
+    display: flex;
+    gap: 5px;
+}
+.sp_event_form.away {
+    justify-content: flex-end;
+}
+.sp_event_form div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+}
+.sp_event_form div::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+}
+.sp_event_form .win {
+    background: #09B211;
+}
+.sp_event_form .win::after {
+    content: 'В';
+}
+.sp_event_form .draw {
+    background: #FFC504;
+}
+.sp_event_form .draw::after {
+    content: 'Н';
+}
+.sp_event_form .loss {
+    background: #FF4747;
+}
+.sp_event_form .loss::after {
+    content: 'П';
+}
+
+.sp_news_block {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sp_news {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    border-bottom: 1px solid #E2ECF3;
+}
+
+.sp_news:last-child {
+    border-bottom: none;
+}
+
+.sp_news_image {
+    width: 82px;
+}
+
+.main .sp_news_image img {
+    width: 82px;
+    min-width: 82px;
+    height: 82px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.sp_news_date {
+    font-size: 12px;
+    line-height: 18px;
+    color: #888888;
+}
+
+.sp_news_title {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #000;    
+}
+
+.sp_predicts_blocks {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    margin-bottom: 0;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+}
+
+.sp_predicts_blocks::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+.sp_predicts_blocks::-webkit-scrollbar-track {
+    background: #fff;
+}
+.sp_predicts_blocks::-webkit-scrollbar-thumb {
+  background-color: #009ADD;
+  border-radius: 3px;
+}
+
+.sp_predicts_block {
+    min-width: 250px;
+    margin-bottom: 0!important;
+}
+
+.sp_predicts_block_link {
+    font-size: 12px;
+    line-height: 14px;
+    color: #888;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sp_predicts_block .predicts-item__promo-code,
+.sp_predicts_block .predicts-item__promo-code-outer {
+    display: none;
+}
+
+.sp_more_hidden {
+    display: none!important;
+}
+
+.sp_more_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+.sp_more_btn {
+    background: #F5F5F5;
+    border-radius: 8px;
+    padding: 6px 38px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #636363;
+}
+
+.sp_bets {
+    display: flex;
+    gap: 3px;
+}
+
+.sp_bet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0059B2;
+    color: #0059B2;
+    background: #fff;
+    width: 42px;
+    height: 24px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    position: relative;
+}
+
+.sp_bet_image {
+    position: absolute;
+    width: 102px;
+    height: 35px;
+    left: -30px;
+    top: -45px;
+    display: none;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #C4C4C433;
+    color: #0059B2;
+    padding: 5px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 6px #0000001a;
+    font-size: 14px;
+    color: #131313;  
+}
+
+.sp_bet_image:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%) rotate(45deg);
+    transform: translate(-50%, 50%) rotate(45deg);
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #fff;
+    border-right: solid 1px #C4C4C433;
+    border-bottom: solid 1px #C4C4C433;
+}
+
+.sp_bet_image img {
+    max-width: 70px!important;
+    height: auto;
+}
+
+.sp_bet:hover {
+    background: #0059B2;
+    color: #fff;
+}
+
+.sp_bet:hover .sp_bet_image {
+    display: flex;
+}
+
+.block-btn {
+    cursor: pointer;
+}
+
+.block-content {
+    display: none;
+}
+
+.block-content.open {
+    display: block;
+}
+
+ 
+
+.tab-buttons .tab-btn {
+    cursor: pointer;
+
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.open {
+    display: block;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.sp_mob_hidden {
+    display: none;
+}
+
+@media(min-width: 576px) {
+    .cyber_game {
+        width: calc((100% - 16px) / 2 );
+    }
+    .sp_news_block {
+        gap: 16px;
+    }
+    .sp_news {
+        width: calc((100% - 16px) / 2);
+        flex-direction: column;
+        padding: 0;
+        border: none;
+        align-self: stretch;
+        gap: 0;
+    }
+    .sp_news_image {
+        width: 100%;
+        height: 180px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        padding-top: 62.5%;        
+    }
+    .main .sp_news_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        border-radius: 0;
+    }
+    .sp_news_content {
+        padding: 15px;
+        border: 1px solid #E2ECF3;
+        border-top: none;
+        flex-grow: 1;
+    }
+    .sp_news_date {
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 3px;
+    }
+    .sp_news_title {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .sp_predicts_blocks {
+        flex-wrap: wrap;
+        overflow-x: visible;
+        justify-content: flex-start;
+    }    
+    .sp_predicts_block {
+        min-width: calc((100% - 16px) / 2);
+        max-width: calc((100% - 16px) / 2);
+    }
+    
+    .sp_predicts_block .predicts-item__promo-code-outer {
+        display: flex;
+    } 
+    .sp_predicts_block .predicts-item__promo-code {
+        display: block;
+    }
+    .sp_predicts_bonus {
+        display: none!important;
+    }  
+
+    .sp_header_title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .sp_header_tabs_desktop {
+        display: flex;
+    }
+    .sp_header_tabs_mobile {
+        display: none;
+    }
+    .sp_header .sp_event_block_bonus_bk {
+        min-width: 90px;
+    }
+}
+@media(min-width: 768px) {
+    .sp_block_title {
+        flex-direction: row;
+    } 
+    .sp_header_title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .sp_header_tab {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .sp_header_tabs_season .sp_header_tab {
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px;
+    }
+
+    .sp_news {
+        width: calc((100% - 32px) / 3);
+    }    
+    .sp_predicts_block {
+        min-width: calc((100% - 32px) / 3);
+        max-width: calc((100% - 32px) / 3);
+    }
+    .sp_inner_block {
+        padding: 12px;
+    }
+    .sp_mob_hidden {
+        display: block;
+    }
+}
+@media(min-width: 1140px) {
+    .sp_header_container {
+        max-width: 1140px;
+        padding: 10px 5px 15px;
+    }
+    .sp_header_info {
+        width: calc(100% - 560px);
+    }
+    .sp_header .sp_block {
+        width: 400px;
+    } 
+    .wrapper-bookmaker:after {
+        content: none;
+    }
+}
+
+@media(min-width: 1280px) {
+    .sp_header_container {
+        max-width: 1205px;
+    }    
+ 
+}
+
+@media(min-width: 1530px) {
+
+    body.branding .main .sp_block {
+        padding: 10px 0;
+    }
+}

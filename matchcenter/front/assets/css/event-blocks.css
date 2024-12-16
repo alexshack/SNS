@@ -1,0 +1,181 @@
+.sp_event_blocks {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    max-height: 135px;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+}
+
+.sp_event_blocks::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+.sp_event_blocks::-webkit-scrollbar-track {
+    background: #fff;
+}
+.sp_event_blocks::-webkit-scrollbar-thumb {
+  background-color: #009ADD;
+  border-radius: 3px;
+}
+
+.sp_event_block {
+    background: #FFFFFF;
+    border: 1px solid #E3E4E8;
+    border-radius: 5px;
+    min-width: 330px;
+    padding: 10px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sp_event_block:hover {
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 12px;
+}
+.sp_event_block_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: #888888;
+    font-size: 14px;
+    line-height: 1;    
+}
+
+.sp_event_block_matchday {
+    color: #888888;
+}
+.sp_event_block_league {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #888888;
+    font-size: 14px;
+    line-height: 1;
+}
+.sp_event_block_league_img {
+    width: 30px;
+    height: 30px;
+    max-height: 30px;
+    max-width: 30px;
+    padding: 5px;
+}
+
+.sp_event_block_content {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.sp_event_block_teams {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;  
+   flex-grow: 1;  
+   padding-right: 20px;
+   border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sp_event_block_team {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sp_event_block_team_name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+.team_logo {
+    width: 30px!important;
+    height: 30px!important;
+    min-width: 30px;
+}
+
+
+.team_name {
+    font-size: 14px;
+    line-height: 15px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #131313;    
+}
+
+.sp_event_block_team_score {
+    font-size: 24px;
+    line-height: 30px;
+    color: #131313; 
+    font-weight: bold;   
+}
+
+.sp_event_block .sp_event_block_results {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+.sp_event_block_results .sp_event_block_matchday {
+    font-size: 12px;
+    text-align: center;
+}
+
+.sp_event_block_time a {
+    font-size: 18px;
+    line-height: 18px;
+    color: #131313;   
+}
+
+.sp_event_block_link {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5px 5px;
+    color: #276FB9;
+    border: 1px solid #276FB9;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+.sp_event_block_link:hover {
+    color: #fff;
+    background: #276FB9;
+}
+
+@media(min-width: 576px) {
+    .sp_event_blocks {
+        flex-wrap: wrap;
+        max-height: none;
+        gap: 16px;
+        overflow: visible;
+        padding-bottom: 0;
+    }    
+    .sp_event_block {
+        max-width: calc((100% - 16px) / 2 );
+        min-width: calc((100% - 16px) / 2 );
+    }
+    .team_name {
+        min-height: unset;
+        font-size: 18px;
+        line-height: 20px;        
+    }
+}
+@media(min-width: 768px) {
+ 
+
+}
+@media(min-width: 1000px) {
+
+}
+@media(min-width: 1140px) {
+ 
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+ 
+}

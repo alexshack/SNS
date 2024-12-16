@@ -1,0 +1,53 @@
+.sp_league_block_news {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.sp_league_block_btn {
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 10px;
+    line-height: 20px;
+}
+
+.sp_league_block_btn:hover {
+    background-color: #0059B2;
+    color: #fff;
+}
+
+.sp_league_block_btn img {
+    width: auto;
+    height: 20px !important;
+}
+
+
+
+@media(min-width: 576px) {
+
+}
+@media(min-width: 768px) {
+    .sp_league_block_btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+
+}
+@media(min-width: 1000px) {
+ 
+
+}
+@media(min-width: 1140px) {
+
+}
+@media(min-width: 1200px) {
+
+}
+@media(min-width: 1280px) {
+
+}

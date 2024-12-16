@@ -1,0 +1,76 @@
+.sp_playoffs {
+    margin-bottom: 20px;
+}
+
+.sp_playoff {
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #131313;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #C4C4C433;  
+}
+.sp_playoff_teams {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.sp_playoff_team {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.sp_playoff_team img {
+    width: 20px;
+    height: 20px;
+}
+
+.sp_playoff_scores {
+    display: flex;
+    gap: 10px;
+    
+}
+.sp_playoff_score {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 16px;
+    justify-content: center;
+}
+
+.sp_playoff_score:nth-child(3) {
+    border-radius: 5px;
+    border: 1px solid #0059B2;
+    padding: 0 5px;
+}
+
+.sp_playoff_score span,
+.sp_playoff_score strong {
+    text-align: center;
+}
+
+.sp_playoffs .sp_block_accord .sp_block_accord_title {
+    min-width: 30px;
+}
+
+@media(min-width: 768px) {
+
+    .sp_playoff {
+        gap: 15px;
+    }
+    .sp_playoff_scores {
+        display: flex;
+        gap: 30px;        
+    }
+
+    .sp_playoff_score:nth-child(3) {
+        padding: 0 10px;
+        min-width: 36px;
+    }
+
+}

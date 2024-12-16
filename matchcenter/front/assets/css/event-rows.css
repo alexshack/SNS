@@ -1,0 +1,358 @@
+.sp_event_rows {
+}
+
+.sp_event_rows_title,
+h2.sp_event_rows_title,
+h3.sp_event_rows_title {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sp_event_rows_title a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #131313;    
+}
+
+.sp_event_rows_title a:hover {
+    color: #0059B2;
+}
+
+.sp_event_rows_title.sp_block_accord_title {
+    border-radius: 8px;
+    padding: 12px;
+    background: #F5F5F5;
+}
+
+.sp_event_rows_title.sp_block_accord_title:after {
+    right: 12px;
+}
+
+.sp_event_rows_title_img {
+    height: 24px!important;
+    width: auto;
+    margin: 0;
+}
+
+.sp_event_rows_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.sp_event_rows_group {
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 0!important;
+}
+
+.sp_event_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #C4C4C433;
+}
+
+.sp_event_row:last-child {
+    border-bottom: none;
+}
+
+.sp_event_row:hover {
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 12px;
+}
+
+.sp_event_row:hover .sp_event_row_team_name,
+.sp_event_row:hover .sp_event_row_date {
+    color: #131313;
+}
+
+.sp_event_row_date {
+    font-size: 12px;
+    line-height: 16px;
+    color: #636363;
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-left: auto;
+}
+
+.sp_event_row_date_tv {
+    width: 24px;
+    height: 24px;
+}
+
+.sp_event_row_date_tv svg {
+    width: 24px;
+    height: 24px;
+    color: #0059B2;
+}
+
+.sp_event_row_date_tv:hover svg {
+    color: #1DBF72;
+}
+
+.sp_event_row_places {
+    width: calc(100% - 130px);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #636363;
+}
+
+.sp_event_row_link {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    color: #131313;
+}
+
+.sp_event_row_link:hover {
+    color: #0059B2;
+}
+
+.sp_event_row_team {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    line-height: 18px;    
+}
+
+
+.sp_event_row_team_logo {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sp_event_row_team_name {
+    color: #636363;
+}
+
+.sp_event_row_team_score {
+    margin-left: auto;
+}
+
+.sp_event_row_footer {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 4px;
+    width: 100%;
+}
+
+.sp_event_row_score {
+    margin-left: auto;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: flex-end;
+    color: #888888;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+}
+.sp_event_row_bets {
+     margin-left: auto;
+}
+
+.sp_event_row_score .result_status_future {
+    font-weight: 700;
+    color: #131313;
+    width: 100%;
+    text-align: right;
+}
+
+.sp_event_row_score .result_prefix {
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px;
+    color: #131313;
+    text-align: center;
+    background: #F5F5F5;
+    width: 30px;
+    border: 1px solid #888;
+}
+
+.sp_event_row_score_desktop {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.sp_event_row_score_desktop .score_finished {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sp_event_row_score_desktop .score_live {
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+}
+
+.sp_event_row_score_desktop .score_live_mins {
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+}
+
+.sp_event_predict {
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px; 
+    color: #15A863; 
+    text-align: center;
+    width: 60px;
+}
+
+a.sp_event_predict {
+    border: 1px solid #15A863;  
+}
+
+a.sp_event_predict:hover {
+    background: #15A863;
+    color: #FFF;
+}
+
+@media(min-width: 576px) {
+
+}
+
+@media(min-width: 768px) {
+    .sp_event_rows_wrapper {
+        gap: 0;
+        margin-bottom: 10px;
+    }
+
+    .sp_event_row {
+        justify-content: flex-start;
+    }
+
+    .sp_event_row_places {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .sp_event_row_date {
+        order: 0;
+        width: 129px;
+        font-size: 15px;
+        line-height: 18px;
+        padding: 0;
+        margin-left: 0;
+        justify-content: space-between;
+    }
+
+    .sp_event_row_link {
+        border: 0;
+        padding: 0;
+        flex-direction: row;
+        width: 406px;
+    }
+
+    .sp_event_row_team {
+        width: 173px;
+    }
+
+    .sp_event_row_team_first {
+        order: 1;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    .sp_event_row_team_score { 
+        display: none;
+    }   
+    .sp_event_row_score_desktop {
+        order: 2;
+        display: flex;
+        width: 60px;
+    } 
+    .sp_event_row_score_desktop a {
+        font-weight: 700;
+        color: #131313;
+    }
+
+    .sp_event_row_score_desktop a:hover {
+        color: #0059B2;
+    }
+
+    .sp_event_row_team_first .sp_event_row_team_name {
+        order: -1;
+        text-align: right;
+    }
+    .sp_event_row_team_second {
+        order: 3;
+        padding: 0;
+    }
+
+    .sp_event_row_footer {
+        margin-left: auto;
+        order: 4;
+        padding: 0;
+        width: 196px;
+    }
+
+    .sp_event_predict {
+        width: 60px;
+    }
+
+    .sp_event_row_bets { 
+        width: 132px;
+        margin-top: 0;
+        justify-content: flex-end;
+    } 
+
+    .sp_event_row_score {
+        width: 132px;
+        display: flex;
+    }
+  
+    .sp_event_row_score .result_score {
+        display: none;
+    }
+
+
+}
+
+@media(min-width: 1140px) {
+    .sp_event_rows_title.sp_block_accord_title {
+        margin-bottom: 0!important;
+    }
+    .sp_event_row_link {
+        width: 476px;
+    }    
+    .sp_event_row_team {
+        width: 208px;
+
+    }
+}
