@@ -837,7 +837,7 @@ class SP_Loader_Functions {
 
 	public static function getCurl( $request, $sport_type = false ) {
 
-	    $key  = '35d7628b219c0633b4317cb521c7f0b7';
+	    $key  = '';
 
 		$url  = 'https://v3.football.api-sports.io/' . $request;
 		$host = 'v3.football.api-sports.io';
